@@ -1,7 +1,12 @@
 var express = require('express')
 var app = express()
-// body parser 가져오기
 var bodyParser = require('body-parser')
+var router = require('./router/index.js')
+
+var main = require('./router/main.js')
+var email = require('./router/email.js')
+
+
 
 app.listen(3000,function(){
 	console.log("start on port 3000");
@@ -17,33 +22,8 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.set('view engine', 'ejs');
 //view engine은 ejs야 라고 정리해주는
 
+app.use(router);
+app.use('/main', main);
+app.use('/email', email);
+//main으로 들어모면 main으로 감
 
-//url routing
-//root url
-app.get('/', function (req,res) {
-	console.log("test");
-	res.sendFile(__dirname + "/public/main.html")
-});
-// /main url
-app.get('/main', function (req,res) {
-    res.sendFile(__dirname + "/public/main.html")
-});
-	// get : req.param('email')
-	//
-app.post('/email_post', function (req,res) {
-	console.log(req.body.email);
-	// res.send("<h1>welcome! "+ req.body.email+"</h1>" )
-	res.render('email.ejs', {'email' : req.body.email})
-	//ejs에서 email이라는 name을 찾아서 치환 응답함// object로 받음
-});
-
-//ejs는 express와 결합하는 template임
-
-app.post('/ajax_send_email', function(req, res){
-	console.log(req.body.email);
-	//check validataion about input value.....
-	// ==> select db or insert db
-	// 이게 사이클임 AJAX까지 해서 노드에서 어찌 처리하는지
-	var responseData = {'result':'ok', 'email' : req.body.email};
-	res.json(responseData);
-});

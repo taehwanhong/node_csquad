@@ -6,12 +6,47 @@
  섹션4까지 듣습니다.(섹션 4. Router 개선 - 모듈화)
 
 ###Node JS 환경 구성.
-1. NPM 설치
-2. static directory...
-3. 
 
+###mysql
+ 1. 설치
+ 
+    brew install mysql
+ 
+ 2. mysql시작
+ 
+    mysql.server start
 
+ 3. mysql 로 들어가기
+    mysql -u root
+  
+ 4. 기초 명령어
+    show databases : 데이터 베이스 출력
+    show tables : 선택된 데이터 베이스의 테이블 출력
+    show index [from table name] : 해당 테이블의 인덱스 목록 출력
+    show variables : 환경변수 보기
+    use [DATABASENAME] : DB선택
+    create database [DATABASENAME] : database생성
+    
+    
+ 5. database생성
+    create database jsman;
+ 
+ 6. database 선택
+    use jsman;
+ 
+ 7. table생성
+    create table user( 
+    user_no INT(11) unsigned NOT NULL,
+    user_name VARCHAR(32) NOT NULL, 
+    PRIMARY KEY(user_no));
+ 
+ 8. 
+    
 
+### 추가로 공부할것
+1. get 요청과 post요청의 차이
+ [https://blog.outsider.ne.kr/312https://blog.outsider.ne.kr/312]
+2. 
 
 ----------
 # GIT
