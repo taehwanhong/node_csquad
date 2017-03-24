@@ -14,7 +14,7 @@
 - DB에 있는 데이터를 string을 가지고 있어도 됌
 
 
-###Node JS 환경 구성.
+### Node JS 환경 구성.
  1. http://passportjs.org
  2. express
  
@@ -27,7 +27,7 @@
  1. update packages
  2. setup ssh connection
 
-###DATABASE
+### DATABASE
  >DBMS = database mgmt sys.
  >데이터를 모아놓고 사용하는게 db
  >관리하는 소프트웨어를 포함하면 dbms임
@@ -63,7 +63,7 @@
   >Hadoop : hbase
   >Cassandra : apache에서 만든거
   
-###Mysql data type
+### Mysql data type
  -DataType
  >컬럼의 유형을 지정할때 씀
  >이거에따라 성능 용량 저장방식 등이 달라짐
@@ -99,8 +99,9 @@
  crud를 해야함
  Creat read use delete임
  
- 
-###mysql
+-----------------
+
+### mysql
  1. 설치
  
     brew install mysql
@@ -157,10 +158,10 @@
 > https://git-scm.com/book/ko/v2
 - 브랜칭 및 workflow 이해하기
   - 직접 실습
-   http://learnbranch.urigit.com/
+   > http://learnbranch.urigit.com/
   - 워크 플로우
-   https://ujuc.github.io/2015/12/16/git-flow-github-flow-gitlab-flow/
-   https://guides.github.com/introduction/flow/
+   > https://ujuc.github.io/2015/12/16/git-flow-github-flow-gitlab-flow/
+   > https://guides.github.com/introduction/flow/
 
 # PRE-Study materials
 코드 스쿼드에 오기 전에 먼저 공부하고 오면 좋은 영상들의 목록입니다.
@@ -175,12 +176,13 @@
 >- https://opentutorials.org/course/1223
 
 
-#알고리즘 관련 서적 등
+# 알고리즘 관련 서적 등
+
 1. 서적 
 
-코딩인터뷰 완전 분석 (추천) - http://www.yes24.com/24/goods/7434347?scode=032&OzSrank=1
-누워서 읽는 알고리즘 - http://www.yes24.com/24/goods/22380570?scode=032&OzSrank=1
-Introduction to algorihtm - http://www.yes24.com/24/goods/13776831?scode=032&OzSrank=1 
+> 코딩인터뷰 완전 분석 (추천) - [http://www.yes24.com/24/goods/7434347?scode=032&OzSrank=1]
+> 누워서 읽는 알고리즘 - [http://www.yes24.com/24/goods/22380570?scode=032&OzSrank=1]
+> Introduction to algorihtm - [http://www.yes24.com/24/goods/13776831?scode=032&OzSrank=1] 
 
  
 
