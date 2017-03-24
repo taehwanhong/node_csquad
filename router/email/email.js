@@ -3,18 +3,18 @@
  */
 var express = require('express')
 var app = express()
-var router = express.Router();
-//라우터 메소드 시행
+var router = express.Router(); //라우터 메소드 시행
 var path = require('path')
 var mysql = require('mysql')
 
-//
+
 //database setting
 //DB연동은 여기 참고https://expressjs.com/en/guide/database-integration.html
 var connection = mysql.createConnection({
     host     : 'localhost',
     port     : 3306,
     user     : 'root',
+    password : '1234qwer',
     database : 'jsman'
 });
 

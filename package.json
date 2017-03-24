@@ -4,7 +4,8 @@
   "description": "nodeserver test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,5 +15,11 @@
     "express": "^4.15.2",
     "mysql": "^2.13.0",
     "nodemon": "^1.11.0"
+  },
+  "devDependencies": {
+    "connect-flash": "^0.1.1",
+    "express-session": "^1.15.1",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
   }
 }
