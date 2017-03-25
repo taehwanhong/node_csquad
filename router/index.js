@@ -17,7 +17,6 @@ router.get('/', function(req, res) {
 router.use('/main', main); //다른모듈을 쓸때는 use쓰면 됌
 router.use('/email', email);
 router.use('/join', join);
-router.use('/login'
-    login);
+router.use('/login', login);//login 연결
 
 module.exports = router;

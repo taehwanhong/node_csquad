@@ -1,11 +1,11 @@
 /**
  * Created by davidhong on 22/03/2017.
  */
-var express = require('express')
-var app = express()
+var express = require('express');
+var app = express();
 var router = express.Router(); //라우터 메소드 시행
-var path = require('path')
-var mysql = require('mysql')
+var path = require('path');
+var mysql = require('mysql');
 
 
 //database setting
@@ -27,7 +27,7 @@ connection.connect();
 router.post('/form', function (req,res) {
     console.log(req.body.email);
     // res.send("<h1>welcome! "+ req.body.email+"</h1>" )
-    res.render('email.ejs', {'email' : req.body.email})
+    res.render('email.ejs', {'email' : req.body.email});
     //ejs에서 email이라는 name을 찾아서 치환 응답함// object로 받음
 });
 
@@ -51,7 +51,7 @@ router.post('/ajax', function(req, res){
             responseData.result = "none";
             responseData.name = "";
         }
-        res.json(responseData)
+        res.json(responseData);
     });
 });
 

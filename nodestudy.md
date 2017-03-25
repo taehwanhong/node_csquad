@@ -1,3 +1,5 @@
+궁금한거 델리게이션?6tgb  
+
 # NODE JS study
 (인프런웹사이트에서 강의를 듣습니다.)
 
@@ -15,7 +17,7 @@
 
 
 ### Node JS 환경 구성.
- 1. http://passportjs.org
+ 1. http://passpo
  2. express
  
 
